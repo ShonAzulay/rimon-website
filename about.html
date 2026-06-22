@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>אודותינו – רימון יזמות ובנייה</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header id="hdr">
+  <a href="index.html" class="logo"><div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>רימון</a>
+  <nav>
+    <a href="index.html">ראשי</a>
+    <a href="projects.html">פרויקטים</a>
+    <a href="about.html" class="active">אודותינו</a>
+    <a href="contact.html" class="cta">צרו קשר</a>
+  </nav>
+  <button class="menu-btn" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+</header>
+<div class="page-hero">
+  <p class="eyebrow">אודותינו</p>
+  <h1>רימון יזמות ובנייה</h1>
+  <p>מהחברות המובילות בקריות</p>
+</div>
+<section class="about-page reveal">
+  <h2>הסיפור שלנו</h2>
+  <p>חברת רימון הינה מהחברות המובילות והמבוססות בקריות. לחברת רימון יש ניסיון רב בייזום, תכנון ובנייה של פרויקטים יוקרתיים.</p>
+  <p>לאורך השנים בנתה חברת רימון פרויקטים רבים במיקומים מנצחים בקריות, <strong>סביבה איכותית ותכנון אדריכלי מתקדם.</strong></p>
+  <p>בחברת רימון רואים בלקוח מרוצה מטרה עליונה ומדד להצלחה. עובדי החברה מלווים את הלקוח לאורך כל תהליך הרכישה החל משלב התכנון, וביצוע השינויים תוך כדי הקפדה על שירות אישי ואדיב.</p>
+  <p><strong>חדש בחברת רימון:</strong> אנו מבצעים תוכניות תמ"א 38, פינוי בינוי.</p>
+  <br/>
+  <a href="contact.html" class="btn-navy">צרו קשר</a>
+</section>
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="logo" style="color:rgba(255,255,255,0.7)"><div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>רימון</a>
+    <span>© 2025 רימון יזמות ובנייה בע"מ</span>
+    <div class="flinks"><a href="accessibility.html">הצהרת נגישות</a><a href="privacy.html">מדיניות פרטיות</a></div>
+  </div>
+</footer>
+<button class="a11y-btn" onclick="document.querySelector('.a11y-panel').classList.toggle('open')" aria-label="נגישות"><svg viewBox="0 0 24 24"><path d="M12 2a2 2 0 100 4 2 2 0 000-4zm1 6h-2c-1.1 0-2 .9-2 2v5a1 1 0 102 0v-2h2v2a1 1 0 102 0v-5c0-1.1-.9-2-2-2z"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg></button>
+<div class="a11y-panel"><h4>נגישות</h4><div class="a11y-opt" onclick="document.body.style.fontSize='120%'">הגדל טקסט</div><div class="a11y-opt" onclick="document.body.style.fontSize=''">אפס גודל</div><div class="a11y-opt" onclick="document.body.style.filter='grayscale(1)'">גווני אפור</div><div class="a11y-opt" onclick="document.body.style.filter='contrast(1.5)'">ניגודיות גבוהה</div><div class="a11y-opt" onclick="document.body.style.filter=''">אפס הכל</div></div>
+<script src="main.js"></script>
+</body>
+</html>
