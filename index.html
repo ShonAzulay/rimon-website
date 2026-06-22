@@ -72,7 +72,28 @@
     <div><p class="eyebrow-light">הפרויקטים שלנו</p><h2>בנייה שמדברת בעד עצמה</h2></div>
     <a href="projects.html">לכל הפרויקטים ←</a>
   </div>
-  <div class="grid" id="featuredGrid"></div>
+  <div class="grid">
+    <div class="pcard span2 reveal" onclick="location.href='project.html?slug=bengurion39'">
+      <div class="cimg"><img src="images/bengurion39/bengurion39_2.jpg" alt="בן גוריון 39" loading="lazy"/></div>
+      <div class="cbody"><div class="ctag">פרויקט בוטיק</div><h3>בן גוריון 39</h3><span>קרית מוצקין</span></div>
+    </div>
+    <div class="pcard reveal d1" onclick="location.href='project.html?slug=osha8'">
+      <div class="cimg"><img src="images/osha8/osha8_1.jpg" alt="אושה 8" loading="lazy"/></div>
+      <div class="cbody"><div class="ctag">פרויקט בוטיק</div><h3>אושה 8</h3><span>קרית מוצקין</span></div>
+    </div>
+    <div class="pcard reveal d1" onclick="location.href='project.html?slug=kakal23'">
+      <div class="cimg"><img src="images/kakal23/kakal23_1.jpg" alt="קקל 23" loading="lazy"/></div>
+      <div class="cbody"><div class="ctag">פרויקט בוטיק</div><h3>קקל 23</h3><span>קרית מוצקין</span></div>
+    </div>
+    <div class="pcard reveal d2" onclick="location.href='project.html?slug=rachel13'">
+      <div class="cimg"><img src="images/rachel13/rachel13_1.jpg" alt="רחל 13" loading="lazy"/></div>
+      <div class="cbody"><div class="ctag">פרויקט בוטיק</div><h3>רחל 13</h3><span>קרית מוצקין</span></div>
+    </div>
+    <div class="pcard reveal d2" onclick="location.href='project.html?slug=dganiya11'">
+      <div class="cimg"><img src="images/dganiya11/dganiya11_1.jpg" alt="דגניה 11" loading="lazy"/></div>
+      <div class="cbody"><div class="ctag">פרויקט בוטיק</div><h3>דגניה 11</h3><span>קרית ביאליק</span></div>
+    </div>
+  </div>
 </section>
 
 <!-- VIDEO -->
@@ -124,24 +145,6 @@
   <a href="https://www.facebook.com/rimon.co.il" class="sbtn" style="background:#1877F2" target="_blank" aria-label="פייסבוק"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
 </div>
 
-<script src="projects.js"></script>
 <script src="main.js"></script>
-<script>
-// Render featured projects (first 5)
-const grid = document.getElementById('featuredGrid');
-PROJECTS.slice(0,5).forEach((p,i) => {
-  const card = document.createElement('div');
-  card.className = 'pcard reveal' + (i===0?' span2':'') + (i>0?' d'+i:'');
-  card.onclick = () => location.href = `project.html?slug=${p.slug}`;
-  card.innerHTML = `
-    <div class="cimg"><img src="images/${p.slug}/${p.images[0]}" alt="${p.name}" loading="lazy"/></div>
-    <div class="cbody">
-      <div class="ctag">פרויקט בוטיק</div>
-      <h3>${p.name}</h3>
-      <span>${p.city}</span>
-    </div>`;
-  grid.appendChild(card);
-});
-</script>
 </body>
 </html>
