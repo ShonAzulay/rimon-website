@@ -23,7 +23,7 @@ nav a.cta:hover{background:var(--navy-mid);color:var(--white)}
 
 /* HERO */
 .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:100px 6vw 4rem;gap:4rem;background:var(--white);position:relative;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,#b8d4e8 0%,#8fb8d8 50%,#6a9dc0 100%);z-index:0}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,#7aafd4 0%,#4d8ab5 50%,#2d6a96 100%);z-index:0}
 .hero-grid{position:absolute;inset:0;z-index:0;overflow:hidden}
 .hero-grid::before{content:'';position:absolute;inset:-100%;background:repeating-linear-gradient(135deg,transparent 0px,transparent 80px,rgba(13,31,51,.07) 80px,rgba(13,31,51,.07) 81px);animation:wavemove 12s linear infinite}
 .hero-grid::after{content:'';position:absolute;inset:-100%;background:repeating-linear-gradient(135deg,transparent 0px,transparent 180px,rgba(26,58,92,.1) 180px,rgba(26,58,92,.1) 260px);animation:wavemove 18s linear infinite reverse}
