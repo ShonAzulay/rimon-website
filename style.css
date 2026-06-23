@@ -2,7 +2,7 @@
 :root{
   --navy:#1a3a5c;--navy-mid:#2a5080;--navy-dark:#0d1f33;
   --gold:#c9a84c;--gold-light:#e2c97e;
-  --white:#ffffff;--off:#8ac0ea;--pale:#e8f0f8;
+  --white:#ffffff;--off:#c5dcf0;--pale:#e8f0f8;
   --gray:#64748b;--gray-mid:#94a3b8;--text:#0f172a;--border:#dce6f0;
 }
 html{scroll-behavior:smooth}
