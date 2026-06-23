@@ -59,7 +59,7 @@ h1 .gold{color:var(--gold)}
 .val p{font-size:.8rem;color:rgba(255,255,255,.45);margin:0;line-height:1.6}
 
 /* PROJECTS */
-.projects-section{background:var(--off);padding:7rem 6vw}
+.projects-section{background:#c5dcf0;padding:7rem 6vw}
 .sec-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3rem}
 .sec-head h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:900;color:var(--text)}
 .sec-head a{color:var(--navy);text-decoration:none;font-weight:700;font-size:.88rem;border-bottom:2px solid var(--navy);padding-bottom:2px}
