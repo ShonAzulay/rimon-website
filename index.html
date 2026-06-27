@@ -10,7 +10,7 @@
 <style>
 #intro-overlay{
   position:fixed;inset:0;
-  background:#0d1117;
+  background:#ffffff;
   z-index:9999;
   display:flex;
   align-items:center;
@@ -22,18 +22,16 @@
   pointer-events:none;
 }
 #intro-logo{
-  width:75vw;
-  max-width:900px;
-  min-width:300px;
+  width:60vw;
+  max-width:700px;
+  min-width:260px;
   opacity:0;
-  transform:scale(0.75);
-  filter:drop-shadow(0 0 60px rgba(180,50,50,0.4)) drop-shadow(0 0 120px rgba(180,50,50,0.2));
-  transition:opacity 1.4s ease, transform 1.4s ease, filter 1.4s ease;
+  transform:scale(0.85);
+  transition:opacity 1.2s ease, transform 1.2s ease;
 }
 #intro-logo.show{
   opacity:1;
   transform:scale(1);
-  filter:drop-shadow(0 0 40px rgba(180,50,50,0.6)) drop-shadow(0 0 100px rgba(180,50,50,0.3));
 }
 </style>
 </head>
@@ -47,8 +45,7 @@
 
 <header id="hdr">
   <a href="index.html" class="logo">
-    <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>
-    רימון
+    <img src="images/logo.png" alt="רימון יזמות ובנייה" style="height:48px;width:auto;"/>
   </a>
   <nav>
     <a href="index.html" class="active">ראשי</a>
