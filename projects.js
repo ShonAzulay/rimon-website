@@ -12,4 +12,5 @@ const PROJECTS = [
   { slug:"hashkama6",     name:"השקמה 6",         city:"קרית מוצקין", images:["hashkama6_1.jpg","hashkama6_2.jpg","hashkama6_3.jpg","hashkama6_4.jpg"] },
   { slug:"yael27",        name:"יעל 27",          city:"קרית מוצקין", images:["yael27_1.jpg"] },
   { slug:"hashira39",     name:"השיירה 39",       city:"קרית מוצקין", images:["hashira39_1.jpg"] },
+  ,{ slug:"parkhaalia", name:"פארק העלייה", city:"קרית ביאליק", images:["parkhaalia_1.jpg","parkhaalia_2.jpg","parkhaalia_3.jpg","parkhaalia_4.jpg","parkhaalia_5.jpg","parkhaalia_6.jpg","parkhaalia_7.jpg","parkhaalia_8.jpeg"] }
 ];
