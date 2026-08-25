@@ -8,31 +8,11 @@
   <link rel="stylesheet" href="style.css"/>
 
 <style>
-#intro-overlay{
-  position:fixed;inset:0;
-  background:#ffffff;
-  z-index:9999;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  transition:opacity 1s ease;
-}
-#intro-overlay.hide{
-  opacity:0;
-  pointer-events:none;
-}
-#intro-logo{
-  width:60vw;
-  max-width:700px;
-  min-width:260px;
-  opacity:0;
-  transform:scale(0.85);
-  transition:opacity 1.2s ease, transform 1.2s ease;
-}
-#intro-logo.show{
-  opacity:1;
-  transform:scale(1);
-}
+@keyframes rimonOverlayOut { 0%,78% { opacity:1; } 100% { opacity:0; } }
+@keyframes rimonShardIn { from { transform: translate(-140%,-40%) rotate(6deg); opacity:0; } to { transform: translate(0,0) rotate(0); opacity:1; } }
+@keyframes rimonShardIn2 { from { transform: translate(0,-160%) rotate(-4deg); opacity:0; } to { transform: translate(0,0) rotate(0); opacity:1; } }
+@keyframes rimonShardIn3 { from { transform: translate(150%,50%) rotate(5deg); opacity:0; } to { transform: translate(0,0) rotate(0); opacity:1; } }
+@keyframes rimonLogoIn { from { opacity:0; } to { opacity:1; } }
 .hero-logo{
   height:clamp(90px, 14vw, 200px);
   width:auto;
@@ -63,8 +43,15 @@ nav a{
 
 
 <!-- INTRO ANIMATION -->
-<div id="intro-overlay">
-  <img src="images/logo.png" alt="רימון יזמות ובנייה" id="intro-logo"/>
+<div style="position:fixed; inset:0; z-index:9999; background:#fff; display:flex; align-items:center; justify-content:center; pointer-events:none; animation:rimonOverlayOut 2900ms cubic-bezier(.5,0,.2,1) forwards">
+  <div style="position:relative; width:min(700px,78vw); aspect-ratio:1920/962">
+    <div style="position:absolute; inset:0; overflow:hidden; mask-image:url(images/logo.png); -webkit-mask-image:url(images/logo.png); mask-size:contain; -webkit-mask-size:contain; mask-repeat:no-repeat; -webkit-mask-repeat:no-repeat;">
+      <div style="position:absolute; inset:0; background:#9E1B32; clip-path:polygon(0 0,35% 0,20% 100%,0 100%); transform:translate(-140%,-40%) rotate(6deg); animation:rimonShardIn 620ms cubic-bezier(.2,.8,.2,1) 200ms forwards"></div>
+      <div style="position:absolute; inset:0; background:#7C1226; clip-path:polygon(35% 0,70% 0,55% 100%,20% 100%); transform:translate(0,-160%) rotate(-4deg); animation:rimonShardIn2 620ms cubic-bezier(.2,.8,.2,1) 340ms forwards"></div>
+      <div style="position:absolute; inset:0; background:#B0233C; clip-path:polygon(70% 0,100% 0,100% 100%,55% 100%); transform:translate(150%,50%) rotate(5deg); animation:rimonShardIn3 620ms cubic-bezier(.2,.8,.2,1) 480ms forwards"></div>
+    </div>
+    <img src="images/logo.png" alt="רימון יזמות ובנייה" style="position:absolute; inset:0; width:100%; height:100%; object-fit:contain; opacity:0; animation:rimonLogoIn 400ms ease 700ms forwards"/>
+  </div>
 </div>
 
 <header id="hdr">
@@ -202,20 +189,6 @@ nav a{
 </div>
 
 <script src="main.js"></script>
-
-<script>
-(function(){
-  var overlay = document.getElementById('intro-overlay');
-  var logo = document.getElementById('intro-logo');
-  setTimeout(function(){ logo.classList.add('show'); }, 200);
-  setTimeout(function(){
-    overlay.classList.add('hide');
-    setTimeout(function(){
-      overlay.style.display='none';
-    }, 800);
-  }, 2500);
-})();
-</script>
 
 <style>
 .cookie-banner{position:fixed;bottom:0;right:0;left:0;background:#0d1f33;color:#fff;padding:1.2rem 6vw;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;z-index:1500;transform:translateY(100%);transition:transform .5s ease;box-shadow:0 -4px 20px rgba(0,0,0,.2)}
