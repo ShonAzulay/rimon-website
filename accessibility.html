@@ -2,60 +2,43 @@
 <html lang="he" dir="rtl">
 <head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>הצהרת נגישות – רימון</title><link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet"/><link rel="stylesheet" href="style.css"/></head>
 <body>
-<header id="hdr"><a href="index.html" class="logo"><img src="images/logo.png" alt="רימון יזמות ובנייה" style="height:48px;width:auto;"/></a><nav><a href="index.html">ראשי</a><a href="projects.html">פרויקטים</a><a href="about.html">אודותינו</a><a href="contact.html" class="cta">צרו קשר</a></nav></header>
+<header id="hdr"><a href="index.html" class="logo"><img src="images/logo.png" alt="רימון יזמות ובנייה" style="height:48px;width:auto;"/></a><nav><a href="index.html">ראשי</a><a href="projects.html">פרויקטים</a><a href="about.html">אודותינו</a><a href="contact.html" class="cta">צרו קשר</a></nav>
+<button class="menu-btn" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="תפריט">☰</button></header>
 <div class="page-hero"><p class="eyebrow">נגישות</p><h1>הצהרת נגישות</h1></div>
 <section class="about-page">
   <h2>מחויבות לנגישות</h2>
-  <p>אתר זה של חברת רימון יזמות ובנייה בע"מ עומד בדרישות תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות) התשע"ג-2013 ובהנחיות WCAG 2.1 ברמה AA, בהתאם לתקן הישראלי IS 5568.</p>
-  <h2>אמצעי הנגישות באתר</h2>
-  <p><strong>תפריט נגישות:</strong> כפתור הנגישות בפינה השמאלית התחתונה מאפשר: הגדלת טקסט, ניגודיות גבוהה, גווני אפור.</p>
-  <p><strong>ניווט מקלדת:</strong> ניתן לנווט באתר באמצעות מקלדת בלבד.</p>
-  <p><strong>תמונות:</strong> כל התמונות כוללות תיאור חלופי (alt text).</p>
-  <p><strong>פונט:</strong> גופן ברור וקריא, עם ניגודיות מספקת.</p>
-  <h2>יצירת קשר בנושא נגישות</h2>
-  <p>נתקלתם בבעיית נגישות? נשמח לשמוע: <a href="tel:048755090">04-8755090</a> | <a href="mailto:sigal@rimon.co.il">sigal@rimon.co.il</a></p>
-  <p>תאריך עדכון הצהרה זו: ינואר 2025</p>
-</section>
-<footer><div class="footer-inner"><span>© רימון יזמות ובנייה בע"מ</span><div class="flinks"><a href="accessibility.html">הצהרת נגישות</a><a href="privacy.html">מדיניות פרטיות</a></div></div></footer>
-<script src="main.js"></script>
-<!-- COOKIE CONSENT -->
-<style>
-.cookie-banner{position:fixed;bottom:0;right:0;left:0;background:#0d1f33;color:#fff;padding:1.2rem 6vw;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;z-index:1500;transform:translateY(100%);transition:transform .5s ease;box-shadow:0 -4px 20px rgba(0,0,0,.2)}
-.cookie-banner.show{transform:translateY(0)}
-.cookie-text{flex:1;min-width:260px}
-.cookie-text strong{display:block;margin-bottom:.3rem;font-size:.95rem}
-.cookie-text p{margin:0;font-size:.82rem;color:rgba(255,255,255,.7);line-height:1.6}
-.cookie-text a{color:#c9a84c;text-decoration:underline}
-.cookie-actions{display:flex;gap:.8rem;flex-shrink:0}
-.cookie-decline,.cookie-accept{padding:.6rem 1.4rem;border-radius:6px;font-family:'Heebo',sans-serif;font-size:.85rem;font-weight:700;cursor:pointer;border:none;transition:opacity .2s}
-.cookie-decline{background:transparent;border:1px solid rgba(255,255,255,.3);color:#fff}
-.cookie-decline:hover{background:rgba(255,255,255,.08)}
-.cookie-accept{background:#c9a84c;color:#0d1f33}
-.cookie-accept:hover{opacity:.9}
-@media(max-width:600px){.cookie-banner{flex-direction:column;align-items:stretch;text-align:center}.cookie-actions{justify-content:center}}
-</style>
-<div id="cookie-banner" class="cookie-banner">
-  <div class="cookie-text">
-    <strong>שימוש בעוגיות (Cookies)</strong>
-    <p>אנו משתמשים בעוגיות כדי לשפר את חוויית הגלישה שלך באתר. בלחיצה על "מאשר/ת" אתה מסכים לשימוש בעוגיות בהתאם ל<a href="privacy.html">מדיניות הפרטיות</a> שלנו.</p>
-  </div>
-  <div class="cookie-actions">
-    <button class="cookie-decline" onclick="cookieChoice(false)">דחייה</button>
-    <button class="cookie-accept" onclick="cookieChoice(true)">מאשר/ת</button>
-  </div>
-</div>
-<script>
-(function(){
-  var banner = document.getElementById('cookie-banner');
-  var consent = localStorage.getItem('cookieConsent');
-  if(!consent){
-    setTimeout(function(){ banner.classList.add('show'); }, 1200);
-  }
-})();
-function cookieChoice(accepted){
-  localStorage.setItem('cookieConsent', accepted ? 'accepted' : 'declined');
-  document.getElementById('cookie-banner').classList.remove('show');
-}
-</script>
+  <p>חברת רימון יזמות ובנייה בע"מ רואה חשיבות רבה במתן שירות שוויוני לכלל הלקוחות, לרבות אנשים עם מוגבלות. אנו פועלים להנגיש את האתר בהתאם לתקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע"ג-2013, ולהנחיות התקן הישראלי ת"י 5568 המבוסס על מסמך WCAG 2.0 ברמה AA.</p>
 
+  <h2>מה הונגש באתר</h2>
+  <p><strong>תפריט נגישות:</strong> כפתור הנגישות שבפינה השמאלית התחתונה של המסך פותח תפריט המאפשר הגדלה והקטנה של הטקסט, ניגודיות גבוהה, תצוגה בגווני אפור, הדגשת קישורים ועצירת אנימציות. הבחירה נשמרת בין עמודי האתר ובין ביקורים.</p>
+  <p><strong>ניווט מקלדת:</strong> ניתן לנווט בכל רכיבי האתר באמצעות מקש Tab, להפעיל אותם באמצעות Enter או מקש הרווח, ולסגור חלונות צפים באמצעות מקש Escape. בראש כל עמוד קיים קישור "דילוג לתוכן המרכזי" הנחשף בעת ניווט במקלדת.</p>
+  <p><strong>סימון מיקוד:</strong> הרכיב הפעיל בעת ניווט במקלדת מסומן במסגרת כהה וברורה.</p>
+  <p><strong>תמונות:</strong> תמונות התוכן באתר כוללות טקסט חלופי (alt) המתאר את הפרויקט המוצג. תמונות דקורטיביות ואייקונים מסומנים כך שקוראי מסך מדלגים עליהם.</p>
+  <p><strong>מבנה ושפה:</strong> האתר בנוי בכיווניות ימין-לשמאל, מוגדר בשפה העברית, ומשתמש בכותרות היררכיות ובגופן ברור וקריא.</p>
+  <p><strong>התאמה למכשירים:</strong> האתר מותאם לצפייה בטלפון נייד, בטאבלט ובמחשב, ותומך בהגדלת התצוגה של הדפדפן.</p>
+
+  <h2>רכיבים שטרם הונגשו במלואם</h2>
+  <p>למרות מאמצינו, ייתכנו באתר חלקים שטרם הונגשו במלואם:</p>
+  <p>• <strong>סרטון התדמית</strong> מוטמע משירות YouTube ואינו בשליטתנו המלאה. הסרטון כולל כתוביות אוטומטיות בלבד ולא כתוביות שהוגהו ידנית.</p>
+  <p>• <strong>חלק מהתמונות</strong> בגלריות הפרויקטים נושאות תיאור כללי ("שם הפרויקט – תמונה 3") ולא תיאור מפורט של תוכן התמונה.</p>
+  <p>• <strong>אנימציית הפתיחה</strong> בעמוד הבית נמשכת מספר שניות; ניתן לבטל אנימציות דרך תפריט הנגישות או דרך הגדרת "צמצום תנועה" במערכת ההפעלה.</p>
+  <p>• ייתכנו פערי ניגודיות בחלק מרכיבי העיצוב המשניים. אנו פועלים לתיקונם.</p>
+  <p>אנו ממשיכים לשפר את נגישות האתר באופן שוטף.</p>
+
+  <h2>נגישות במשרדי החברה</h2>
+  <p>לבירור בדבר התאמות נגישות פיזיות במשרדי החברה ובפרויקטים, ניתן לפנות אלינו בפרטים שלהלן ונשמח לסייע ולתאם מראש.</p>
+
+  <h2>רכז הנגישות ופנייה בנושא</h2>
+  <p>נתקלתם בבעיית נגישות באתר? נשמח מאוד לדעת ונטפל בכך בהקדם.</p>
+  <p><strong>רכזת נגישות:</strong> סיגל אזולאי<br/>
+  <strong>טלפון:</strong> <a href="tel:048755090">04-8755090</a><br/>
+  <strong>דוא"ל:</strong> <a href="mailto:sigal@rimon.co.il">sigal@rimon.co.il</a><br/>
+  <strong>כתובת:</strong> בן גוריון 71, קרית מוצקין</p>
+  <p>נשתדל להשיב לפנייתכם בתוך זמן סביר. אם לא נענתם באופן מספק, ניתן לפנות לנציבות שוויון זכויות לאנשים עם מוגבלות במשרד המשפטים.</p>
+
+  <p style="font-size:.85rem;margin-top:2rem">תאריך עדכון ההצהרה: ספטמבר 2026</p>
+</section>
+<footer><div class="footer-inner"><span>© רימון יזמות ובנייה בע"מ</span><div class="flinks"><a href="accessibility.html">הצהרת נגישות</a><a href="privacy.html">מדיניות פרטיות</a><a href="terms.html">תנאי שימוש</a></div></div></footer>
+<script src="main.js"></script>
+<script src="consent.js"></script>
 </body></html>
